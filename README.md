@@ -17,3 +17,17 @@
 </div>
 
 ---
+
+###  ⚡️ Commands
+
+Generate a question's solutions, test and documentation file
+
+```bash
+make generate-question folderName="e.g. blind75" codeFileName="e.g. GroupAnagrams" docFileName="e.g 4.group-anagrams"
+```
+
+Track a question's Solutions, Test Suite and Document
+
+```bash
+make track-files question="Group Anagrams"
+```
