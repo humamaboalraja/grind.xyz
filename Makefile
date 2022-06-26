@@ -1,4 +1,5 @@
 generate-question:
+	git checkout -b $(branchName)
 	@-cd  ./coding/solutions/src/main/java/xyz/grind/coding/$(folderName);\
 	touch $(codeFileName).java;\
 	cd  ../../../../../../../../;\
