@@ -42,8 +42,8 @@ public class GroupAnagrams {
         Map<String, List<String>> computedAnagram = new HashMap<String, List<String>>();
         for(String arrayAnagramElement : strs) {
             char[] strCounterCharArray = new char[26];
-            for(char charachter : arrayAnagramElement.toCharArray()){
-                strCounterCharArray[charachter - 'a']++;
+            for(char character : arrayAnagramElement.toCharArray()){
+                strCounterCharArray[character - 'a']++;
             }
             String keyAnagram = new String(strCounterCharArray);
             if(!computedAnagram.containsKey(keyAnagram)) computedAnagram.computeIfAbsent(keyAnagram, k -> new ArrayList<>());
@@ -57,21 +57,3 @@ public class GroupAnagrams {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
