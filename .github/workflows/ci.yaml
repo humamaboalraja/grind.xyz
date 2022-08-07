@@ -6,7 +6,7 @@ on: pull_request
 
 defaults:
   run:
-    working-directory: coding/solutions
+    working-directory: problem-solving/solutions
 
 
 jobs:
