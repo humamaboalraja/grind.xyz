@@ -1,2 +1,4 @@
-package xyz.grind.coding.ctci.ArraysAndStrings;public class CheckPremutation {
+package xyz.grind.coding.ctci.ArraysAndStrings;
+
+public class CheckPermutation {
 }

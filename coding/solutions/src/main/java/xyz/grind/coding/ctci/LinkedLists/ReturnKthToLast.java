@@ -1,2 +1,4 @@
-package xyz.grind.coding.ctci.LinkedLists;public class ReturnKthToLast {
+package xyz.grind.coding.ctci.LinkedLists;
+
+public class ReturnKthToLast {
 }

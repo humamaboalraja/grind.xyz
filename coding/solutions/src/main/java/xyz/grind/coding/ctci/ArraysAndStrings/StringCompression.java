@@ -1,2 +1,4 @@
-package xyz.grind.coding.ctci.ArraysAndStrings;public class StringCompression {
+package xyz.grind.coding.ctci.ArraysAndStrings;
+
+public class StringCompression {
 }

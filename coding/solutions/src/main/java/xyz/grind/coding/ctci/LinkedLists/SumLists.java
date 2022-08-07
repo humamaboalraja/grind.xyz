@@ -1,2 +1,4 @@
-package xyz.grind.coding.ctci.LinkedLists;public class SumLists {
+package xyz.grind.coding.ctci.LinkedLists;
+
+public class SumLists {
 }

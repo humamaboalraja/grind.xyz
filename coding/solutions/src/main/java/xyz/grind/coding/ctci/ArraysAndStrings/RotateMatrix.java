@@ -1,2 +1,4 @@
-package xyz.grind.coding.ctci.ArraysAndStrings;public class RotateMatrix {
+package xyz.grind.coding.ctci.ArraysAndStrings;
+
+public class RotateMatrix {
 }

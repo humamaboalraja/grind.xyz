@@ -1,2 +1,4 @@
-package xyz.grind.coding.ctci.ArraysAndStrings;public class OneAway {
+package xyz.grind.coding.ctci.ArraysAndStrings;
+
+public class OneAway {
 }

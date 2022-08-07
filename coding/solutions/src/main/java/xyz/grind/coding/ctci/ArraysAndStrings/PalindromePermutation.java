@@ -1,2 +1,4 @@
-package xyz.grind.coding.ctci.ArraysAndStrings;public class PalindromePermutation {
+package xyz.grind.coding.ctci.ArraysAndStrings;
+
+public class PalindromePermutation {
 }

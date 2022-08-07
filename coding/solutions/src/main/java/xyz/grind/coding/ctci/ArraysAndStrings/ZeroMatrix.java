@@ -1,2 +1,4 @@
-package xyz.grind.coding.ctci.ArraysAndStrings;public class ZeroMatrix {
+package xyz.grind.coding.ctci.ArraysAndStrings;
+
+public class ZeroMatrix {
 }

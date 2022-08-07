@@ -1,2 +1,4 @@
-package xyz.grind.coding.ctci.ArraysAndStrings;public class IsUnique {
+package xyz.grind.coding.ctci.ArraysAndStrings;
+
+public class IsUnique {
 }
