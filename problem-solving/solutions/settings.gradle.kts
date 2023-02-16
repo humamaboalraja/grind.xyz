@@ -1,4 +1,4 @@
-rootProject.name = 'grind.xyz'
+rootProject.name = "grind.xyz"
 
 pluginManagement {
     repositories {
@@ -15,6 +15,10 @@ dependencyResolutionManagement {
 
 
 include (
-    'blind75',
+    "leetcode:blind75",
+    "leetcode:test-coverage-report",
+
+    "ctci:main",
+    "ctci:test-coverage-report",
 )
 
