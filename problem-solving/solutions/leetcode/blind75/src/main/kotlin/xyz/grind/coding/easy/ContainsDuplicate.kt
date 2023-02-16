@@ -1,8 +1,8 @@
 package xyz.grind.coding.easy
 
-import java.util.*
+import java.util.Arrays
 
-object _ContainsDuplicate {
+object ContainsDuplicate {
     // Time: O(n), Space: O(1)
     fun containsDuplicateBruteForce(nums: IntArray): Boolean {
         for (i in nums.indices) {

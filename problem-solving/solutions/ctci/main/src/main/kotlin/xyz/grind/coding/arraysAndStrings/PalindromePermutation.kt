@@ -1,4 +1,4 @@
-package xyz.grind.coding.arraysAndStrings;
+package xyz.grind.coding.arraysAndStrings
 
 import java.math.BigDecimal
 import kotlin.math.PI

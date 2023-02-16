@@ -1,4 +1,3 @@
-package xyz.grind.coding.linkedLists;
+package xyz.grind.coding.linkedLists
 
-object Intersection {
-}
+object Intersection

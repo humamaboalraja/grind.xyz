@@ -1,4 +1,4 @@
-package xyz.grind.coding.linkedLists;
+package xyz.grind.coding.linkedLists
 
 object DeleteMiddleNode {
     fun doTHis(): String {
