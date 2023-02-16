@@ -31,7 +31,7 @@ A command that generates a question's solutions, test and documentation file
 
 - `branchName` used to name the new added question's branch
 - `folderName` used to target the question provider directories which is one of these (blind75, leetcode, ctci)
-- `codeFileName` used to generate the java solutions and test files in the specified `folderName` directory
+- `codeFileName` used to generate the kotlin solutions and test files in the specified `folderName` directory
 - `docFileNameFileName` used to generate the question's document
  
 
