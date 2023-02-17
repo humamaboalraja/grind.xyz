@@ -11,17 +11,6 @@ plugins {
     `kotlin-dsl`
     kotlin("jvm") version kotlinVersion apply false
 
-    // Quality metrics using SonarQube
-    id("org.sonarqube") version "3.5.0.2730"
-
-}
-
-sonarqube {
-    properties {
-        property("sonar.projectKey", "humamaboalraja_grind.xyz")
-        property("sonar.organization", "humamaboalraja")
-        property("sonar.host.url", "https://sonarcloud.io")
-    }
 }
 
 subprojects {
@@ -49,4 +38,10 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("com.diffplug.spotless:spotless-plugin-gradle:6.2.0")
     implementation("org.jacoco:org.jacoco.core:0.8.7")
+}
+
+
+tasks.register<JacocoReport>("codeCoverageReport") {
+    executionData(fileTree(project.rootDir.absolutePath).include("**/build/jacoco/*.exec"))
+    dependsOn(allprojects.map { it.tasks.named<Test>("test") })
 }

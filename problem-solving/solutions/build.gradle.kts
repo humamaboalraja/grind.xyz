@@ -1,6 +1,7 @@
 plugins {
     // Quality metrics using SonarQube
     id("org.sonarqube") version "3.5.0.2730"
+    id("jacoco")
 
 }
 
