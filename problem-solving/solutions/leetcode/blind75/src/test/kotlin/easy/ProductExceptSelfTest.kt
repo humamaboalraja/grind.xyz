@@ -1,1 +1,3 @@
 package easy
+
+class ProductExceptSelfTest
