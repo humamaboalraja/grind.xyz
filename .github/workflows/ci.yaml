@@ -22,7 +22,7 @@ jobs:
           java-version: '17'
           distribution: 'corretto'
           cache: 'gradle'
-      - name: Run tests
+      - name: Run Spotless
         run: ./gradlew spotlessCheck
 
   tests:
