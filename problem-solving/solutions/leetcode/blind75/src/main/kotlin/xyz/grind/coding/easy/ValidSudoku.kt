@@ -1,7 +1,5 @@
 package xyz.grind.coding.easy
 
-import java.util.*
-
 object ValidSudoku {
 
     @JvmStatic
@@ -19,8 +17,8 @@ object ValidSudoku {
             charArrayOf('.', '.', '.', '4', '1', '9', '.', '.', '5'),
             charArrayOf('.', '.', '.', '.', '8', '.', '.', '7', '9')
         )
-        val set: Array<HashSet<String>> = arrayOf( HashSet(9))
-        val setTwo: Array<HashSet<String>> = arrayOf( HashSet(9))
+        val set: Array<HashSet<String>> = arrayOf(HashSet(9))
+        val setTwo: Array<HashSet<String>> = arrayOf(HashSet(9))
         for (i in set.indices) {
             set[i] = HashSet()
             setTwo[i] = HashSet()
@@ -52,9 +50,9 @@ object ValidSudoku {
     }
 
     fun isValidSudokuHashSet(board: Array<CharArray>): Boolean {
-        val rows = Array(9) { HashSet<Char>()}
-        val columns = Array(9) { HashSet<Char>()}
-        val boxes = Array(9) { HashSet<Char>()}
+        val rows = Array(9) { HashSet<Char>() }
+        val columns = Array(9) { HashSet<Char>() }
+        val boxes = Array(9) { HashSet<Char>() }
 
         for (r in 0 until 9) {
             for (c in 0 until 9) {
@@ -64,7 +62,8 @@ object ValidSudoku {
                 if (currentValue == '.') continue
                 if (rows[r].contains(currentValue) or
                     columns[c].contains(currentValue) or
-                    boxes[boxIndex].contains(currentValue)) return false
+                    boxes[boxIndex].contains(currentValue)
+                ) return false
                 rows[r].add(currentValue)
                 columns[c].add(currentValue)
                 boxes[boxIndex].add(currentValue)
@@ -73,5 +72,4 @@ object ValidSudoku {
 
         return true
     }
-
 }

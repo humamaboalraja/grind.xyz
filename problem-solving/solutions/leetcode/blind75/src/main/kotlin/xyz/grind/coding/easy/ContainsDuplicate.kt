@@ -1,6 +1,6 @@
 package xyz.grind.coding.easy
 
-import java.util.*
+import java.util.Arrays
 
 object ContainsDuplicate {
     fun containsDuplicateBruteForce(nums: IntArray): Boolean {
@@ -25,8 +25,8 @@ object ContainsDuplicate {
     fun containsDuplicate(nums: IntArray): Boolean {
         val duplicates = HashSet<Int>(nums.size)
 
-        for(number in nums) {
-            if(duplicates.contains(number)) return true
+        for (number in nums) {
+            if (duplicates.contains(number)) return true
             duplicates.add(number)
         }
         return false
@@ -42,5 +42,4 @@ object ContainsDuplicate {
         }
         return false
     }
-
 }
