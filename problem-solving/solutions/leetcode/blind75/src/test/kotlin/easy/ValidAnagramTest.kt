@@ -19,7 +19,11 @@ class ValidAnagramTest {
             Executable { assertTrue(ValidAnagram.isAnagram("silent", "listen")) },
             Executable { assertTrue(ValidAnagram.isAnagram("anagram", "gaanrma")) },
             Executable { assertTrue(ValidAnagram.isAnagram("art", "tra")) },
-            Executable { assertTrue(ValidAnagram.isAnagram("aps", "pas")) }
+            Executable { assertTrue(ValidAnagram.isAnagram("aps", "pas")) },
+            Executable { assertTrue(ValidAnagram.isAnagramAdjusted("silent", "listen")) },
+            Executable { assertTrue(ValidAnagram.isAnagramAdjusted("anagram", "gaanrma")) },
+            Executable { assertTrue(ValidAnagram.isAnagramAdjusted("art", "tra")) },
+            Executable { assertTrue(ValidAnagram.isAnagramAdjusted("aps", "pas")) },
         )
     }
 
@@ -34,7 +38,11 @@ class ValidAnagramTest {
             Executable { assertFalse(ValidAnagram.isAnagram("silent", "isten")) },
             Executable { assertFalse(ValidAnagram.isAnagram("anagram", "aanrma")) },
             Executable { assertFalse(ValidAnagram.isAnagram("art", "ra")) },
-            Executable { assertFalse(ValidAnagram.isAnagram("aps", "as")) }
+            Executable { assertFalse(ValidAnagram.isAnagram("aps", "as")) },
+            Executable { assertFalse(ValidAnagram.isAnagramAdjusted("silent", "isten")) },
+            Executable { assertFalse(ValidAnagram.isAnagramAdjusted("anagram", "aanrma")) },
+            Executable { assertFalse(ValidAnagram.isAnagramAdjusted("art", "ra")) },
+            Executable { assertFalse(ValidAnagram.isAnagramAdjusted("aps", "as")) },
         )
     }
 }

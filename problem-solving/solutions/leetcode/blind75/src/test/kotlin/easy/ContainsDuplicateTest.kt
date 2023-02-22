@@ -19,6 +19,10 @@ class ContainsDuplicateTest {
                 assertTrue(ContainsDuplicate.containsDuplicateBruteForce(intArrayOf(1, 1, 1, 3, 3, 4, 3, 2, 4, 2)))
                 assertTrue(ContainsDuplicate.containsDuplicateSorting(intArrayOf(2, 2, 3, 3)))
                 assertTrue(ContainsDuplicate.containsDuplicateSorting(intArrayOf(1, 1, 1, 3, 3, 4, 3, 2)))
+                assertTrue(ContainsDuplicate.containsDuplicateFunctional(intArrayOf(1, 2, 3, 3)))
+                assertTrue(ContainsDuplicate.containsDuplicateFunctional(intArrayOf(2, 2, 3, 3)))
+                assertTrue(ContainsDuplicate.containsDuplicateFunctional(intArrayOf(3, 3, 3, 3)))
+                assertTrue(ContainsDuplicate.containsDuplicateFunctional(intArrayOf(1, 1, 1, 3, 3, 4, 3, 2, 4, 2)))
             }
         )
     }
@@ -33,6 +37,9 @@ class ContainsDuplicateTest {
                 assertFalse(ContainsDuplicate.containsDuplicateBruteForce(intArrayOf(13, 43, 24, 2)))
                 assertFalse(ContainsDuplicate.containsDuplicateSorting(intArrayOf(1, 2, 3, 4)))
                 assertFalse(ContainsDuplicate.containsDuplicateSorting(intArrayOf(10, 46, 51, 66, 91, 35, 76)))
+                assertFalse(ContainsDuplicate.containsDuplicateFunctional(intArrayOf(1, 2, 3, 4)))
+                assertFalse(ContainsDuplicate.containsDuplicateFunctional(intArrayOf(2, 49, 1, 9)))
+                assertFalse(ContainsDuplicate.containsDuplicateFunctional(intArrayOf(4, 11, 34, 5)))
             }
         )
     }

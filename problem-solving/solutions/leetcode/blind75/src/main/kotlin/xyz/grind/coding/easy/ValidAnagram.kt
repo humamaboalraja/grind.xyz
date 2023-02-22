@@ -24,18 +24,18 @@ object ValidAnagram {
         return true
     }
 
-    fun isAnagramAdjusted(s: String, t: String): Boolean {
-        if (s.length != t.length) return false
-        val counts = IntArray(26)
-        for (i in s.indices) {
-            counts[s[i].code - 'a'.code]++
-            counts[t[i].code - 'a'.code]--
+        fun isAnagramAdjusted(s: String, t: String): Boolean {
+            if (s.length != t.length) return false
+            val counts = IntArray(26)
+            for (i in s.indices) {
+                counts[s[i].code - 'a'.code]++
+                counts[t[i].code - 'a'.code]--
+            }
+            for (count in counts) {
+                if (count != 0) return false
+            }
+            return true
         }
-        for (count in counts) {
-            if (count != 0) return false
-        }
-        return true
-    }
 
     fun isAnagram(s: String, t: String): Boolean {
         if (s.length != t.length) return false

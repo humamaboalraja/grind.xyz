@@ -55,4 +55,17 @@ class TwoSumTest {
             }
         )
     }
+
+    @Test
+    fun `Should check handling edge cases`() {
+        Assertions.assertAll(
+            Executable {
+                assertArrayEquals(TwoSum.twoSumBruteForce(intArrayOf(), 0), intArrayOf())
+            },
+            Executable {
+                assertArrayEquals(TwoSum.twoSumBruteForceTwo(intArrayOf(), 0), intArrayOf())
+            }
+        )
+    }
+
 }
