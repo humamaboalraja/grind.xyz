@@ -14,7 +14,9 @@ class TopKFrequentElementsTest {
                 assertArrayEquals(
                     TopKFrequentElements.topKFrequentElementsHeap(
                         intArrayOf(1, 1, 1, 2, 2, 3, 9, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10),
-                        4), intArrayOf(10, 9, 1, 2)
+                        4
+                    ),
+                    intArrayOf(10, 9, 1, 2)
                 )
             },
             Executable {
@@ -22,7 +24,8 @@ class TopKFrequentElementsTest {
                     TopKFrequentElements.topKFrequentElementsHeap(
                         intArrayOf(98798, 34243),
                         2
-                    ), intArrayOf(98798, 34243)
+                    ),
+                    intArrayOf(98798, 34243)
                 )
             },
             Executable {
@@ -30,27 +33,32 @@ class TopKFrequentElementsTest {
                     TopKFrequentElements.topKFrequentElementsHeap(
                         intArrayOf(1, 1, 1, 2, 3, 9, 11, 11),
                         2
-                    ), intArrayOf(1, 11)
+                    ),
+                    intArrayOf(1, 11)
                 )
             },
             Executable {
                 assertArrayEquals(
                     TopKFrequentElements.topKFrequentElements(
                         intArrayOf(1, 1, 1, 2, 3, 9, 11, 11), 2
-                    ), intArrayOf(1, 11)
+                    ),
+                    intArrayOf(1, 11)
                 )
             },
             Executable {
                 assertArrayEquals(
                     TopKFrequentElements.topKFrequentElements(
-                        intArrayOf(1, 1, 1, 2, 2, 3, 9, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10), 4),
-                        intArrayOf(10, 9, 1, 2)
+                        intArrayOf(1, 1, 1, 2, 2, 3, 9, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10), 4
+                    ),
+                    intArrayOf(10, 9, 1, 2)
                 )
             },
             Executable {
                 assertArrayEquals(
                     TopKFrequentElements.topKFrequentElements(
-                        intArrayOf(98798, 34243), 2), intArrayOf(34243, 98798)
+                        intArrayOf(98798, 34243), 2
+                    ),
+                    intArrayOf(34243, 98798)
                 )
             },
             Executable {
@@ -66,28 +74,36 @@ class TopKFrequentElementsTest {
         Assertions.assertAll(
             Executable {
                 assertArrayEquals(
-                    TopKFrequentElements.topKFrequentElementsHeap(intArrayOf(4), 1), intArrayOf(4))
-
+                    TopKFrequentElements.topKFrequentElementsHeap(intArrayOf(4), 1), intArrayOf(4)
+                )
             },
             Executable {
                 assertArrayEquals(
-                    TopKFrequentElements.topKFrequentElementsHeap(intArrayOf(98798, 34243), 2), intArrayOf(98798, 34243))
+                    TopKFrequentElements.topKFrequentElementsHeap(intArrayOf(98798, 34243), 2), intArrayOf(98798, 34243)
+                )
             },
             Executable {
                 assertArrayEquals(
                     TopKFrequentElements.topKFrequentElementsHeap(
-                        intArrayOf(1, 1, 1, 2, 3, 9, 11, 11), 2), intArrayOf(1, 11))
+                        intArrayOf(1, 1, 1, 2, 3, 9, 11, 11), 2
+                    ),
+                    intArrayOf(1, 11)
+                )
             },
             Executable {
                 assertArrayEquals(
                     TopKFrequentElements.topKFrequentElements(
-                        intArrayOf(11), 1), intArrayOf(11))
+                        intArrayOf(11), 1
+                    ),
+                    intArrayOf(11)
+                )
             },
             Executable {
                 assertArrayEquals(
                     TopKFrequentElements.topKFrequentElements(
                         intArrayOf(1, 1, 1, 2, 2, 3, 9, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10), 4
-                    ), intArrayOf(10, 9, 1, 2)
+                    ),
+                    intArrayOf(10, 9, 1, 2)
                 )
             },
             Executable {
@@ -97,7 +113,8 @@ class TopKFrequentElementsTest {
             },
             Executable {
                 assertArrayEquals(
-                    TopKFrequentElements.topKFrequentElements(intArrayOf(9876543), 1), intArrayOf(9876543))
+                    TopKFrequentElements.topKFrequentElements(intArrayOf(9876543), 1), intArrayOf(9876543)
+                )
             }
         )
     }

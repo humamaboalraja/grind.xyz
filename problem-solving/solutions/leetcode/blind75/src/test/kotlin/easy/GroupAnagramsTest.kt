@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.function.Executable
 import xyz.grind.coding.easy.GroupAnagrams
-import xyz.grind.coding.easy.ValidAnagram
 
 class GroupAnagramsTest {
 
@@ -69,5 +68,4 @@ class GroupAnagramsTest {
             }
         )
     }
-
 }
