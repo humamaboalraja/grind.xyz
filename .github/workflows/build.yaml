@@ -1,5 +1,5 @@
 ---
-name: Solutions CI Pipeline
+name: Build
 
 on: 
   push:
