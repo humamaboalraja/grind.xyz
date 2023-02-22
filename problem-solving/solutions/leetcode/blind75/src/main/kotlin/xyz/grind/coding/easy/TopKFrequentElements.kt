@@ -1,7 +1,7 @@
 package xyz.grind.coding.easy
 
-import java.util.Queue
 import java.util.PriorityQueue
+import java.util.Queue
 import kotlin.collections.HashMap
 import kotlin.collections.MutableList
 import kotlin.collections.MutableMap
@@ -27,7 +27,6 @@ object TopKFrequentElements {
         return top
     }
 
-
     fun topKFrequentElements(nums: IntArray, k: Int): IntArray {
         val count = hashMapOf<Int, Int>()
         val freq = MutableList<MutableList<Int>>(nums.size + 1) { mutableListOf() }
@@ -43,7 +42,4 @@ object TopKFrequentElements {
         }
         return intArrayOf()
     }
-
-
-
 }
