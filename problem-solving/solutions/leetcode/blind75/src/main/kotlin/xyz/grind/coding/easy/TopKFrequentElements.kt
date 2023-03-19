@@ -2,9 +2,7 @@ package xyz.grind.coding.easy
 
 import java.util.PriorityQueue
 import java.util.Queue
-import kotlin.collections.HashMap
 import kotlin.collections.MutableList
-import kotlin.collections.MutableMap
 import kotlin.collections.set
 
 object TopKFrequentElements {
@@ -13,11 +11,11 @@ object TopKFrequentElements {
         if (k == nums.size) {
             return nums
         }
-        val count: MutableMap<Int, Int> = HashMap()
+        val count = mutableMapOf<Int, Int>()
         for (n in nums) { count[n] = count.getOrDefault(n, 0) + 1 }
 
         // when initializing the heap we keep the less frequent element first
-        val heap: Queue<Int> = PriorityQueue { n1: Int, n2: Int -> count[n1]!! - count[n2]!! }
+        val heap: Queue<Int> = PriorityQueue { n1, n2 -> count[n1]!! - count[n2]!! }
         for (n in count.keys) {
             heap.add(n)
             if (heap.size > k) heap.poll()
