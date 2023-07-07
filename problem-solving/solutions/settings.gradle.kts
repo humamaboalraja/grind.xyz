@@ -20,5 +20,9 @@ include (
 
     "ctci:main",
     "ctci:test-coverage-report",
+
+    "fundamentals:data-structures",
+    "fundamentals:algorithms",
+    "fundamentals:test-coverage-report"
 )
 
